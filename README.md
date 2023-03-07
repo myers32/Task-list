@@ -12,7 +12,7 @@ It also contains BEM convenciot, some of the css grid style and media queries.
 
 ## *What's the purpose?*
 
-The purpose of it is to add some tasks to the list and mark them as done. It can also be deleted completely.
+The purpose of it is to add some tasks to the list and mark them as done. Task may be also be deleted completely.
 
 ## Here you can find quick preview of the project: 
 
