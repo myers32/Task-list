@@ -1,4 +1,4 @@
-.form {
+.container__form {
     display: grid;
     grid-template-columns: 5fr 1fr;
     grid-gap: 10px;
@@ -6,7 +6,7 @@
     padding: 20px;
 }
 
-.form__input {
+.container__form--input {
     padding: 10px;
     border: 1px solid #ccc;
 }
@@ -18,16 +18,16 @@
     }
 }
 
-.form__button {
+.container__form--button {
     background-color: teal;
     color: white;
     border: none;
 }
 
-.form__button:hover {
+.container__form--button:hover {
     background-color: hsl(180, 100%, 30%);
 }
 
-.form__button:active {
+.container__form--button:active {
     background-color: hsl(180, 100%, 35%);
 }
