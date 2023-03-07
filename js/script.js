@@ -5,7 +5,6 @@
         tasks.push({
             content: newTaskContent,
         });
-
         render();
     };
 
@@ -59,12 +58,13 @@
         event.preventDefault();
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const emptyForm = document.querySelector(".js-newTask");
 
-        if (newTaskContent === "") {
-            return;
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            emptyForm.value = "";
         }
-
-        addNewTask(newTaskContent);
+        emptyForm.focus();
     };
 
     const init = () => {
