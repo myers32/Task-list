@@ -12,7 +12,7 @@
 }
 
 @media (max-width: 767px) {
-    .form {
+    .container__form {
         display: grid;
         grid-template-columns: 1fr;
     }
