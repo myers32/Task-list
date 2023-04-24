@@ -6,6 +6,12 @@
     height: 30px;   
 }
 
+.task__button:hover {
+    background-color: hsl(120, 100%, 35%);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
 .task__button:active {
     border:solid black 1px;
     border-radius: 1px;
@@ -20,11 +26,18 @@
     background-image: url(../images/kosz.png);
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .task__button--remove:active {
     border:solid black 1px;
     border-radius: 1px;
+}
+
+.task__button--remove:hover {
+    background-color: hsl(0, 100%, 60%);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .tasks {

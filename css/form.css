@@ -22,10 +22,13 @@
     background-color: teal;
     color: white;
     border: none;
+    
 }
 
 .container__form--button:hover {
     background-color: hsl(180, 100%, 30%);
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .container__form--button:active {
