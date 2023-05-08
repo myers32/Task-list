@@ -16,7 +16,7 @@
             ...tasks.slice(0, taskIndex),
             ...tasks.slice(taskIndex +1),
         ];
-        
+
         render();
     };
 
@@ -30,6 +30,20 @@
             ...tasks.slice(taskIndex +1),
         ];
 
+        render();
+    };
+
+    const markAllTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+
+        render();
+    };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
         render();
     };
 
