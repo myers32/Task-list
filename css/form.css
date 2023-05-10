@@ -1,36 +1,33 @@
-.container__form {
+.form {
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-gap: 10px;
-    background-color: white;
-    padding: 20px;
-}
-
-.container__form--input {
-    padding: 10px;
-    border: 1px solid #ccc;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
 }
 
 @media (max-width: 767px) {
-    .container__form {
-        display: grid;
+    .form {
         grid-template-columns: 1fr;
     }
 }
 
-.container__form--button {
-    background-color: teal;
+.form__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form__button {
+    padding: 10px;
+    background: hsl(180, 100%, 25%);
     color: white;
     border: none;
-    
+    transition: 0.3s;
 }
 
-.container__form--button:hover {
-    background-color: hsl(180, 100%, 30%);
-    transform: scale(1.05);
-    transition: 0.5s;
+.form__button:hover {
+    background: hsl(180, 100%, 30%);
+    transform: scale(1.1);
 }
 
-.container__form--button:active {
-    background-color: hsl(180, 100%, 35%);
+.form__button:active {
+    background: hsl(180, 100%, 35%);
 }
